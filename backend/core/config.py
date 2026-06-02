@@ -7,12 +7,12 @@ class Settings(BaseSettings):
     API_PREFIX: str = "/api"
     DEBUG: bool = False
 
-    DATABASE_URL: str = None
+    DATABASE_URL: str | None = None
 
     ALLOWED_ORIGINS: str = ""
 
-    OPENAI_API_KEY: str
-    GROQ_API_KEY: str
+    OPENAI_API_KEY: str = ""
+    GROQ_API_KEY: str = ""
 
     def __init__(self, **values):
         super().__init__(**values)
