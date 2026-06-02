@@ -7,12 +7,12 @@ class Settings(BaseSettings):
     API_PREFIX: str = "/api"
     DEBUG: bool = False
 
-    DATABASE_URL: str | None = None
+    DATABASE_URL: str =  "sqlite:///./databse.db"
 
     ALLOWED_ORIGINS: str = ""
 
     # OPENAI_API_KEY: str = ""
-    GROQ_API_KEY: str 
+    GROQ_API_KEY: str
 
     def __init__(self, **values):
         super().__init__(**values)
