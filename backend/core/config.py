@@ -11,8 +11,8 @@ class Settings(BaseSettings):
 
     ALLOWED_ORIGINS: str = ""
 
-    OPENAI_API_KEY: str = ""
-    GROQ_API_KEY: str = ""
+    # OPENAI_API_KEY: str = ""
+    GROQ_API_KEY: str 
 
     def __init__(self, **values):
         super().__init__(**values)
