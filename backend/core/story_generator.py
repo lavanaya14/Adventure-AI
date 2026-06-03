@@ -39,10 +39,10 @@ class StoryGenerator:
         #  if not serviceurl:
         #      return ChatGroq(serviceurl, consumerkey, consumersecret, tokenurl)
 
-        return ChatGroq(
-            model="llama-3.3-70b-versatile",
-            api_key=os.getenv("GROQ_API_KEY")
-        )
+        # return ChatGroq(
+        #     model="llama-3.3-70b-versatile",
+        #     api_key=os.getenv("GROQ_API_KEY")
+        # )
 
     @classmethod
     def generate_story(cls, db: Session, session_id: str, theme: str = "fantasy")-> Story:
